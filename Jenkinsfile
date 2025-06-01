@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/adityamsrit/devops-autofix-app.git'
+                git branch: 'main', url: 'https://github.com/adityamsrit/devops-autofix-app.git'
             }
         }
 
